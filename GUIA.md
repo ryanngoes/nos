@@ -15,12 +15,13 @@ São três contas grátis: **Supabase** (onde ficam contas, memórias e arquivos
 
 Essas duas informações são públicas por natureza: o banco é protegido pelas regras de segurança do `schema.sql`, não pela chave.
 
-## 2. GitHub (colocar o site no ar)
+## 2. GitHub (site no ar)
 
-1. Crie uma conta em github.com, se ainda não tiver.
-2. Toque em **+** → **New repository**. Nome: `nos`. Deixe **Public**. Crie sem README.
-3. Depois que os arquivos estiverem lá: **Settings** → **Pages** → em **Branch**, escolha `main` e pasta `/ (root)` → **Save**.
-4. Em 1 ou 2 minutos o app fica em `https://SEU-USUARIO.github.io/nos/`.
+Já está feito. O código fica em github.com/ryanngoes/nos e o app em:
+
+**https://ryanngoes.github.io/nos/**
+
+Enquanto o `config.js` não tiver os dados do Supabase, esse endereço abre em modo demonstração.
 
 ## 3. Spotify (aba de música)
 
@@ -30,7 +31,7 @@ Precisa da conta Premium (a sua).
 2. **Create app**:
    - App name: `nós`
    - App description: `app do casal`
-   - Redirect URI: `https://SEU-USUARIO.github.io/nos/` (exatamente assim, com a barra no final) → toque em **Add**
+   - Redirect URI: `https://ryanngoes.github.io/nos/` (exatamente assim, com a barra no final) → toque em **Add**
    - Marque **Web API** e aceite os termos → **Save**.
 3. Na página do app, copie o **Client ID**.
 4. Aba **User Management** → adicione a conta dela: nome e o e-mail que ela usa no Spotify. Sem isso o Spotify bloqueia a conta dela no app.
