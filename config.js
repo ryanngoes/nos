@@ -3,8 +3,8 @@
 // (dados de exemplo, salvos só neste aparelho).
 window.NOS_CONFIG = {
   // Supabase → Project Settings → API (ou "API Keys")
-  SUPABASE_URL: '',
-  SUPABASE_KEY: '', // chave "anon" ou "publishable" (é pública, pode ficar aqui)
+  SUPABASE_URL: 'https://dwatrtdlhxqyhdinonvo.supabase.co',
+  SUPABASE_KEY: 'sb_publishable_qDzk1bKdutPbFLH5sK71fg_XT8zHQHq', // chave "anon" ou "publishable" (é pública, pode ficar aqui)
 
   // Spotify for Developers → seu app → Client ID
   SPOTIFY_CLIENT_ID: '',
