@@ -417,12 +417,12 @@ function viewPair() {
       h('div', { style: 'padding:24px 0 8px' },
         knot('knot'),
         h('h1', { style: 'font-size:34px;margin-top:14px' }, 'Encontre seu amor'),
-        h('p', { class: 'muted', style: 'margin-top:8px' }, 'Procure o @ da pessoa e mande um pedido. Quando ela aceitar, vocês dão match e o app abre pros dois.'),
+        h('p', { class: 'muted', style: 'margin-top:8px' }, 'Procure o @ da pessoa e mande um pedido. Quando a outra pessoa aceitar, vocês dão match e o app abre pros dois.'),
       ),
       h('div', { class: 'panel', style: 'margin-top:16px' },
         h('p', { class: 'small muted' }, 'Seu @ é'),
         h('p', { style: 'font-family:var(--serif);font-size:24px' }, '@' + me.username),
-        h('p', { class: 'small muted', style: 'margin-top:4px' }, 'Se for mais fácil, passe ele pra ela te procurar.'),
+        h('p', { class: 'small muted', style: 'margin-top:4px' }, 'Se for mais fácil, passe ele pro seu amor te procurar.'),
       ),
       h('div', { class: 'section' },
         h('label', { class: 'field', style: 'margin:0' }, h('span', null, 'Buscar pelo @'), h('div', { class: 'input-at' }, q)),
@@ -979,7 +979,7 @@ async function viewMusic() {
     clearInterval(tick);
     const blocks = [];
     if (!pn || pn.status === 'not_connected' || pn.status === 'no_partner') {
-      blocks.push(h('div', { class: 'panel' }, h('p', { class: 'muted' }, `${partner.display_name} ainda não conectou o Spotify. Quando conectar, a música dela aparece aqui.`)));
+      blocks.push(h('div', { class: 'panel' }, h('p', { class: 'muted' }, `${partner.display_name} ainda não conectou o Spotify. Quando conectar, o que estiver tocando aparece aqui.`)));
     } else if (pn.status !== 'ok') {
       blocks.push(h('div', { class: 'panel row' }, avatar(partner, 'md'), h('p', { class: 'muted grow' }, pn.status === 'idle' ? `${partner.display_name} não está ouvindo nada agora.` : 'Não deu pra ver a música agora. Tente de novo em instantes.')));
     } else {
@@ -1124,7 +1124,7 @@ async function viewProfile() {
       h('summary', null, 'Configuração do Spotify'),
       h('p', null, 'No painel de desenvolvedor do Spotify, o Redirect URI do app precisa ser exatamente este:'),
       h('code', { class: 'code' }, redirectUri()),
-      h('p', null, 'E as duas contas do Spotify (a sua e a dela) precisam estar na lista de usuários do app, em User Management.'),
+      h('p', null, 'E as duas contas do Spotify (a sua e a do seu par) precisam estar na lista de usuários do app, em User Management.'),
     ),
   ));
   const k = $app.querySelector('.panel.row > svg');

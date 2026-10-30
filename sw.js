@@ -1,7 +1,7 @@
 // Service worker: deixa o app abrir rápido e funcionar sem internet
 // (as telas abrem; fotos e dados novos precisam de conexão).
 // Ao publicar uma versão nova, aumente o número abaixo.
-const VERSION = 'nos-v1';
+const VERSION = 'nos-v2';
 const SHELL = [
   './',
   'index.html',
